@@ -6,4 +6,7 @@
 # You should have received a copy of the license along with this
 # work.  If not, see <http://creativecommons.org/licenses/by-sa/3.0/>.
 
-SUBDIRS = lib src sample
+LDADD = ../lib/libflushall.a
+AM_CPPFLAGS = -I$(srcdir)/../lib
+bin_PROGRAMS = tanimura
+tanimura_SOURCES = tanimura.h tanimura.cpp

@@ -7,14 +7,21 @@
 # work.  If not, see <http://creativecommons.org/licenses/by-sa/3.0/>.
 
 # Prelude.
+
 AC_INIT([autotools-tutorial], [3.14], [@kazunetakahashi])
-AC_CONFIG_SRCDIR([src/main.c])
 AC_CONFIG_AUX_DIR([build-aux])
+AC_PROG_RANLIB
+AM_PROG_AR
 AM_INIT_AUTOMAKE([foreign -Wall -Werror])
-# Checks for programs
+
+# Check for programs.
+
 AC_PROG_CC
-# Checks for other needed files
+AC_PROG_CXX
+AX_CXX_COMPILE_STDCXX_17([noext], [mandatory])
+
 # Output files.
+
 AC_CONFIG_HEADERS([config.h])
-AC_CONFIG_FILES([Makefile src/Makefile])
+AC_CONFIG_FILES([Makefile src/Makefile lib/Makefile sample/Makefile])
 AC_OUTPUT

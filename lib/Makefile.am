@@ -6,4 +6,5 @@
 # You should have received a copy of the license along with this
 # work.  If not, see <http://creativecommons.org/licenses/by-sa/3.0/>.
 
-SUBDIRS = lib src sample
+noinst_LIBRARIES = libflushall.a
+libflushall_a_SOURCES = flush_all.h
