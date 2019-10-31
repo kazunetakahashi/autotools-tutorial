@@ -10,9 +10,10 @@
 
 AC_INIT([autotools-tutorial], [3.14], [@kazunetakahashi])
 AC_CONFIG_AUX_DIR([build-aux])
-AC_PROG_RANLIB
 AM_PROG_AR
+AC_CONFIG_MACRO_DIR([m4])
 AM_INIT_AUTOMAKE([foreign -Wall -Werror])
+LT_INIT
 
 # Check for programs.
 

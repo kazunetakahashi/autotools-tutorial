@@ -14,12 +14,10 @@
  * Powered by Visual Studio Code
  */
 
-#include <config.h>
-#include <stdio.h>
+#include "say.h"
 
 int main()
 {
-  puts("Hello, World!");
-  puts("This is " PACKAGE_STRING ".");
+  say_hello();
   return 0;
 }

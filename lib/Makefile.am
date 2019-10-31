@@ -8,3 +8,6 @@
 
 noinst_LIBRARIES = libflushall.a
 libflushall_a_SOURCES = flush_all.h
+
+lib_LTLIBRARIES = libhello.la
+libhello_la_SOURCES = say.c say.h
