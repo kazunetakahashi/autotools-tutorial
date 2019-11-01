@@ -14,10 +14,16 @@
  * Powered by Visual Studio Code
  */
 
-#include "say.h"
+#include <locale.h>
+#include "gettext.h"
+#include <config.h>
+#include <say.h>
 
 int main()
 {
+  setlocale(LC_ALL, "");
+  bindtextdomain(PACKAGE, LOCALEDIR);
+  textdomain(PACKAGE);
   say_hello();
   return 0;
 }

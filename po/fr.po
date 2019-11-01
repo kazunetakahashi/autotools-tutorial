@@ -1,0 +1,28 @@
+# French translations for autotools-tutorial package
+# Traductions françaises du paquet autotools-tutorial.
+# Copyright (C) 2019 Kazune Takahashi
+# This file is distributed under the same license as the autotools-tutorial package.
+# Kazune Takahashi <kazunetakahashi@gmail.com>, 2019.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: autotools-tutorial 3.14\n"
+"Report-Msgid-Bugs-To: @kazunetakahashi\n"
+"POT-Creation-Date: 2019-11-01 13:01+0900\n"
+"PO-Revision-Date: 2019-11-01 13:01+0900\n"
+"Last-Translator: Kazune Takahashi <kazunetakahashi@gmail.com>\n"
+"Language-Team: French <traduc@traduc.org>\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: lib/say.c:8
+msgid "Hello, nilpotent Lie algebra!"
+msgstr "Bonjour, alg?bre de Lie nilpotente!"
+
+#: lib/say.c:9
+#, c-format
+msgid "This is %s.\n"
+msgstr "Ceci est %s. \n"

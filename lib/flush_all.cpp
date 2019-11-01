@@ -1,3 +1,6 @@
+#ifndef flush_all_cpp
+#define flush_all_cpp
+
 /**
  * File    : flush_all.cpp
  * Author  : Kazune Takahashi
@@ -18,3 +21,5 @@ void flush_all::operator()(Container c)
     cout << x << endl;
   }
 }
+
+#endif // flush_all_cpp

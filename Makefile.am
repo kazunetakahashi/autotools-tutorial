@@ -6,5 +6,6 @@
 # You should have received a copy of the license along with this
 # work.  If not, see <http://creativecommons.org/licenses/by-sa/3.0/>.
 
-SUBDIRS = lib src sample
+SUBDIRS = lib src sample po
 ACLOCAL_AMFLAGS = -I m4
+EXTRA_DIST = m4/ChangeLog

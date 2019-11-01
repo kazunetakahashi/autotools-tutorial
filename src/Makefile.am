@@ -7,7 +7,9 @@
 # work.  If not, see <http://creativecommons.org/licenses/by-sa/3.0/>.
 
 AM_CPPFLAGS = -I$(srcdir)/../lib
+AM_CPPFLAGS += -DLOCALEDIR=\"$(localedir)\"
 
 bin_PROGRAMS = hello
-hello_SOURCES = main.c
+hello_SOURCES = main.c gettext.h
 hello_LDADD = ../lib/libhello.la
+LDADD = $(LIBINIT)
